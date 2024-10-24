@@ -1,0 +1,159 @@
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*body {
+    background-image: url('tu-imagen-de-fondo.jpg');
+    background-size: cover;  Hace que la imagen cubra toda la pantalla 
+    background-position: center;  Centra la imagen 
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}*/
+
+header {
+    background-color: #000;
+    padding: 20px;
+}
+
+.titulo {
+    color: orange;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #ff0000;
+    margin-top: 0;
+}
+
+.descripcion {
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #e0e0e0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.detalle {
+    font-size: 1rem;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 69, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+h2.subtitulo {
+    color: #ff4500;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+ul.pruebas-lista {
+    list-style: none;
+    padding: 0;
+}
+
+ul.pruebas-lista li {
+    background-color: #333;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+ul.pruebas-lista li:hover {
+    background-color: #ff4500;
+}
+
+ul.pruebas-lista li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.pruebas-lista li a:hover {
+    text-decoration: underline;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video {
+    margin: 20px 0;
+}
+
+
+audio {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+        margin: 15px;
+        padding: 8px;
+    }
+
+    .detalle {
+        font-size: 0.9rem;
+        margin: 10px;
+        padding: 8px;
+    }
+
+    ul.pruebas-lista li {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .img-responsive {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+
+    .detalle {
+        font-size: 0.8rem;
+        margin: 8px;
+        padding: 6px;
+    }
+
+    ul.pruebas-lista li {
+        font-size: 0.8rem;
+    }
+
+    .img-responsive {
+        width: 100%;
+    }
+}
